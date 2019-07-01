@@ -1,0 +1,11 @@
+ja:
+ activerecord:
+    models:
+      text: 'テキスト'
+      comment: 'コメント'
+      admin_user: '管理者'
+    attributes:
+      text:
+        title: 'タイトル'
+        contents: '内容'
+        genre: 'ジャンル'

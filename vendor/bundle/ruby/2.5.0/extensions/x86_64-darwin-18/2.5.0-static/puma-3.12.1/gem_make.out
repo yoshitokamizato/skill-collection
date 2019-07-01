@@ -1,14 +1,14 @@
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
-/Users/kanaihajime/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190615-30772-1yn63lg.rb extconf.rb
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
+/Users/mura/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190701-3611-1j7iyuw.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
 creating Makefile
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
 make "DESTDIR=" clean
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -16,6 +16,6 @@ compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/puma-3.12.1/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20190615-30772-1bjejye/puma
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20190701-3611-1rluxd/puma
