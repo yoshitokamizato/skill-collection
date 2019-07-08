@@ -1,8 +1,74 @@
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
-/Users/kanaihajime/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190615-30772-11ix874.rb extconf.rb --use-system-libraries
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
+/Users/mura/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190701-3611-nw9mkv.rb extconf.rb
 checking if the C compiler accepts  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
-Building nokogiri using system libraries.
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.4.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.9
+with the following patches applied:
+	- 0001-Revert-Do-not-URI-escape-in-server-side-includes.patch
+	- 0002-Remove-script-macro-support.patch
+	- 0003-Update-entities-to-remove-handling-of-ssi.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.9.tar.gz into tmp/x86_64-apple-darwin18.2.0/ports/libxml2/2.9.9... OK
+Running git apply with /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running git apply with /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/patches/libxml2/0002-Remove-script-macro-support.patch... OK
+Running git apply with /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/patches/libxml2/0003-Update-entities-to-remove-handling-of-ssi.patch... OK
+Running 'configure' for libxml2 2.9.9... OK
+Running 'compile' for libxml2 2.9.9... OK
+Running 'install' for libxml2 2.9.9... OK
+Activating libxml2 2.9.9 (from /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ports/x86_64-apple-darwin18.2.0/libxml2/2.9.9)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.33
+with the following patches applied:
+	- 0001-Fix-security-framework-bypass.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.33.tar.gz into tmp/x86_64-apple-darwin18.2.0/ports/libxslt/1.1.33... OK
+Running git apply with /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/patches/libxslt/0001-Fix-security-framework-bypass.patch... OK
+Running 'configure' for libxslt 1.1.33... OK
+Running 'compile' for libxslt 1.1.33... OK
+Running 'install' for libxslt 1.1.33... OK
+Activating libxslt 1.1.33 (from /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ports/x86_64-apple-darwin18.2.0/libxslt/1.1.33)...
+checking for -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
 checking for exsltFuncRegister() in libexslt/exslt.h... yes
@@ -15,10 +81,10 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
 make "DESTDIR=" clean
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -33,31 +99,6 @@ compiling xml_comment.c
 compiling xml_document.c
 compiling xml_document_fragment.c
 compiling xml_dtd.c
-xml_dtd.c:47:47: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
-  xmlHashScan((xmlHashTablePtr)dtd->entities, element_copier, (void *)hash);
-                                              ^~~~~~~~~~~~~~
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
-                                         xmlHashScanner f,
-                                                        ^
-xml_dtd.c:69:48: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
-  xmlHashScan((xmlHashTablePtr)dtd->notations, notation_copier, (void *)hash);
-                                               ^~~~~~~~~~~~~~~
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
-                                         xmlHashScanner f,
-                                                        ^
-xml_dtd.c:91:49: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
-  xmlHashScan((xmlHashTablePtr)dtd->attributes, element_copier, (void *)hash);
-                                                ^~~~~~~~~~~~~~
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
-                                         xmlHashScanner f,
-                                                        ^
-xml_dtd.c:113:47: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
-  xmlHashScan((xmlHashTablePtr)dtd->elements, element_copier, (void *)hash);
-                                              ^~~~~~~~~~~~~~
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
-                                         xmlHashScanner f,
-                                                        ^
-4 warnings generated.
 compiling xml_element_content.c
 compiling xml_element_decl.c
 compiling xml_encoding_handler.c
@@ -85,8 +126,9 @@ compiling xml_xpath_context.c
 compiling xslt_stylesheet.c
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ports/archives
+rm -rf /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri/tmp/x86_64-apple-darwin18.2.0/ports
+rm -rf /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ports
 
-current directory: /Users/kanaihajime/Desktop/gyakuten_salon/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
+current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.3/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20190615-30772-17wlyk6/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20190701-3611-7dntuy/nokogiri
