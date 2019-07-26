@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/mura/.rbenv/versions/2.5.1/include/ruby-2.5.0
+topdir = /Users/MASA/.rbenv/versions/2.5.1/include/ruby-2.5.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/mura/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18
+arch_hdrdir = /Users/MASA/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin16
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/mura/.rbenv/versions/2.5.1
+prefix = $(DESTDIR)/Users/MASA/.rbenv/versions/2.5.1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20190701-3611-g1j31s
-sitelibdir = $(DESTDIR)./.gem.20190701-3611-g1j31s
+sitearchdir = $(DESTDIR)./.gem.20190726-54346-1gdgisn
+sitelibdir = $(DESTDIR)./.gem.20190726-54346-1gdgisn
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -84,10 +84,10 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe  $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) 
 DEFS     = 
-CPPFLAGS = -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_COLUMN_DATABASE_NAME -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64 -I/usr/local/Cellar/sqlite/3.28.0/include -I/Users/mura/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64 -I/usr/local/Cellar/sqlite/3.29.0/include -I/Users/MASA/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags)  $(ARCH_FLAG)
-ldflags  = -L. -L/Users/mura/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib 
-dldflags = -L/Users/mura/.rbenv/versions/2.5.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+ldflags  = -L. -L/Users/MASA/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib 
+dldflags = -L/Users/MASA/.rbenv/versions/2.5.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -102,7 +102,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = x86_64-darwin18
+arch = x86_64-darwin16
 sitearch = $(arch)
 ruby_version = 2.5.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -122,8 +122,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /usr/local/Cellar/sqlite/3.28.0/lib
-LIBPATH =  -L. -L$(libdir) -L/usr/local/Cellar/sqlite/3.28.0/lib
+libpath = . $(libdir) /usr/local/Cellar/sqlite/3.29.0/lib
+LIBPATH =  -L. -L$(libdir) -L/usr/local/Cellar/sqlite/3.29.0/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -138,7 +138,7 @@ LIBS =  -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc
 ORIG_SRCS = backup.c database.c exception.c sqlite3.c statement.c
 SRCS = $(ORIG_SRCS) 
 OBJS = backup.o database.o exception.o sqlite3.o statement.o
-HDRS = $(srcdir)/statement.h $(srcdir)/backup.h $(srcdir)/database.h $(srcdir)/sqlite3_ruby.h $(srcdir)/exception.h
+HDRS = $(srcdir)/backup.h $(srcdir)/database.h $(srcdir)/exception.h $(srcdir)/sqlite3_ruby.h $(srcdir)/statement.h
 LOCAL_HDRS = 
 TARGET = sqlite3_native
 TARGET_NAME = sqlite3_native
