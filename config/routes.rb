@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   # url home, homeコントローラのindexアクションを指定
   get '/home', to: 'home#index'
+
+  root to: 'home#index'
 end
