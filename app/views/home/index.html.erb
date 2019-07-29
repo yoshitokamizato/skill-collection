@@ -35,14 +35,3 @@
     </tr>
   </tbody>
 </table>
-
-<%
-  text = <<~TEXT
-    |言語|説明|
-    |---|---|
-    |HTML/CSS|Webサイトの画面を作るための言語|
-    |Ruby|Webサイトの裏側の処理をする言語|
-    |Python|人工知能を開発するための言語|
-  TEXT
-%>
-<%= markdown(text).html_safe %>
