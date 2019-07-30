@@ -1,6 +1,14 @@
 <% text = @message %>
 <%= markdown(text).html_safe %>
 
+<% @texts.each do |text| %>
+  <ul>
+    <il>タイトル：<%= text.title %></li>
+    <il>内容：<%= text.contents %></li>
+    <il>ジャンル：<%= text.genre %></li>
+  </ul>
+<% end %>
+
 <script>
     $(document).ready(function(){
         $("#myInput").on("keyup", function() {
