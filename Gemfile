@@ -16,6 +16,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 
+# Markdown
+gem 'redcarpet'
+
+# シンタックスハイライト
+gem 'coderay'
+
 # 管理者画面
 gem 'activeadmin'
 gem 'devise'
