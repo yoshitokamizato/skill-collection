@@ -6,8 +6,12 @@ RSpec.describe ImportCsv, type: :model do
     before do
       ImportCsv.import('db/csv_data/csv_data_test.csv')
     end
-    let(:csv_test) { Text.find_by(title: "test") }
 
+    it "textのデータ件数が1と等しいことを確認" do
+      expect(Text.count).to eq 1
+    end
+
+    let(:csv_test) { Text.find_by(title: "test") }
     it "titleの値が取得できているか？" do
       expect(csv_test.title).to eq "test"
     end
