@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # url home, homeコントローラのindexアクションを指定
   get '/home', to: 'homes#index'
   root to: 'homes#index'
-  get '/home/text/:id', to: 'homes#show'
+  get 'homes/:id', to: 'homes#show'
 end
