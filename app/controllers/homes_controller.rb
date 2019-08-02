@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class HomesController < ApplicationController
   def index
     @message = '# Hello World!!!'
     @texts = Text.all
