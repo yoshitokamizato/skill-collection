@@ -1,0 +1,7 @@
+<h1>Text</h1>
+<%
+    text =<<~TEXT
+        #{@text.contents}
+    TEXT
+%>
+<%= markdown(text).html_safe %>
