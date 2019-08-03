@@ -1,4 +1,13 @@
 ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        password: パスワード
+        password_confirmation: パスワードの確認
+        email: Email
+        remember_me: 保存する
+        Log_in: ログイン
   devise:
     confirmations:
       confirmed: "アカウントが確認されました。ログインしています。"
