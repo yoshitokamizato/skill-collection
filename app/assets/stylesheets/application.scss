@@ -3,3 +3,14 @@
  * listed below.
 */
 @import "bootstrap";
+
+#container {
+  width: 100%;
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.serch-bar {
+  margin-bottom: 20px;
+}
