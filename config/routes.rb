@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   root to: 'homes#index'
   get '/home', to: 'homes#index'
+  get 'texts/:id', to: 'texts#show'
 end
