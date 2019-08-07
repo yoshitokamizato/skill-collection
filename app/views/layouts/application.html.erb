@@ -12,8 +12,11 @@
 
 <body>
   <%= render 'layouts/header' %>
-
-  <%= yield %>
+  <div id="container">
+    <section>
+      <%= yield %>
+    </section>
+  </div>
   <!---script群--->
   <script>
     $(document).ready(function () {

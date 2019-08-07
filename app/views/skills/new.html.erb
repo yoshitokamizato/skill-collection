@@ -1,0 +1,6 @@
+<%= form_for @skill, method: :post do |f| %>
+  <h1>学習内容を入力</h1>
+  <p>言語名：<%= f.select :skill_name, [["HTML","HTML"],["CSS","CSS"],["Javascript","Javascript"],["PHP","PHP"],["Ruby","Ruby"],["Python","Python"],["Swift","Swift"],["Unity","Unity"],["C#","C#"],["Java","Java"]] %></p>
+  <p>学習時間：<%= f.number_field :study_time %></p>
+  <input type="submit" value="送信">
+<% end %>
