@@ -9,7 +9,7 @@ class SkillsController < ApplicationController
 
   def create
     Skill.create(
-      skill_name: skill_params[:skill_name],
+      name: skill_params[:name],
       study_time: skill_params[:study_time],
       user_id: current_user.id
     )
@@ -23,6 +23,6 @@ class SkillsController < ApplicationController
   private
 
   def skill_params
-    params.require(:skill).permit(:skill_name, :study_time)
+    params.require(:skill).permit(:name, :study_time)
   end
 end

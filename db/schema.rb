@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2019_08_07_101002) do
   end
 
   create_table "skills", force: :cascade do |t|
-    t.string "skill_name"
+    t.string "name"
     t.integer "study_time", default: 0
     t.integer "user_id"
     t.datetime "created_at", null: false

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/home', to: 'homes#index'
 
   devise_for :users
+  resources :users, only: :show
 
   resources :skills
 
