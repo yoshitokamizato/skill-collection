@@ -13,7 +13,7 @@ class SkillsController < ApplicationController
       study_time: skill_params[:study_time],
       user_id: current_user.id
     )
-    redirect_to skills_path
+    redirect_to user_path(current_user.id)
   end
 
   def move_to_index
