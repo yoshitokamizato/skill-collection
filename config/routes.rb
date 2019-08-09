@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'users/show'
-  resources :users, only: [:show]
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+  resources :users, only: [:show]
 
   root to: 'homes#index'
   get '/home', to: 'homes#index'
