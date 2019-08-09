@@ -1,3 +1,4 @@
+
 <% if user_signed_in? %>
   <div class="serch-bar">
     <input class="form-control" id="myInput" type="text" placeholder="検索..">
@@ -6,18 +7,18 @@
     <table class="table table-striped">
       <thead class="bg-danger text-white">
         <tr>
-          <th class="w-1">No.</th>
+          <th class="w-1"><%= sort_link(@q, :id, "No.") %></th>
           <th class="w-2">ジャンル</th>
           <th class="w-5">内容</th>
         </tr>
       </thead>
       <tbody>
         <% @texts.each do |text| %>
-        <tr>
-          <td><%= text.title %></td>
-          <td><%= text.genre %></td>
-          <td><%= link_to text.contents, "/texts/#{text.id}" %></td>
-        </tr>
+          <tr>
+            <td><%= text.title %></td>
+            <td><%= text.genre %></td>
+            <td><%= link_to text.contents, "/texts/#{text.id}" %></td>
+          </tr>
         <% end %>
       </tbody>
     </table>

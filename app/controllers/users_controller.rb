@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(current_user.id).skills
-    @skill = @user.new
-    @skills = @user.all
+    @user = User.find(current_user.id)
+    @skill = @user.skills.new
+    @skills = @user.skills.all
   end
 end
