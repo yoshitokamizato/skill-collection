@@ -7,5 +7,11 @@ Rails.application.routes.draw do
 
   root to: 'homes#index'
   get '/home', to: 'homes#index'
+
+  devise_for :users
+  resources :users, only: :show
+
+  resources :skills
+
   get 'texts/:id', to: 'texts#show'
 end
