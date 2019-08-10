@@ -1,6 +1,9 @@
 class SkillsController < ApplicationController
   def index
-    @skills = Skill.all
+    @skills =
+      User.joins(:skills).group(:email).group(:name).select(
+        'user_id, email, name, sum(study_time) as study_time'
+      )
   end
 
   def new
