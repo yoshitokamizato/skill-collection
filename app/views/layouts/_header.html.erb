@@ -12,14 +12,22 @@
         </li>
       <% end %>
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-link active' %>
+        <li class="nav-item">
+          <%= link_to "全ユーザーの学習記録", skills_path, class: 'nav-link active' %>
         </li>
-        <li>
-          <%= link_to "マイページ", user_path(current_user.id), method: :get, class: 'nav-link active' %>
+        <li class="nav-item">
+          <%= link_to "マイページ", user_path(current_user.id), class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>
       <% else %>
-        <%= link_to "ログイン", new_user_session_path, class: 'nav-link post active' %>
+        <li class="nav-item">
+          <%= link_to "ログイン", new_user_session_path, class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "新規登録", new_user_registration_path, class: 'nav-link active' %>
+        </li>
       <% end %>
     </ul>
   </div>
