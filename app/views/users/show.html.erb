@@ -1,5 +1,5 @@
 <h1>【マイページ】</h1>
-<p>メールアドレス：<%= @user.email %></p>
+<p>メールアドレス：<%= @user.first.email %></p>
 <hr>
 <%= form_for @skill, method: :post do |f| %>
   <h2>学習内容を入力</h2>
