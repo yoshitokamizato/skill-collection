@@ -32,6 +32,12 @@ gem 'rails-i18n'
 # 検索機能
 gem 'ransack'
 
+#ロケーション適用
+gem 'devise-i18n'
+
+# deviseにbootstrapを適用
+gem 'devise-bootstrap-views', '~> 1.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
