@@ -1,5 +1,5 @@
 <h1>【マイページ】</h1>
-<p>メールアドレス：<%= @user.email %></p>
+<p>メールアドレス：<%= @user.first.email %></p>
 <hr>
 <%= form_for @skill, method: :post do |f| %>
   <h2>学習内容を入力</h2>
@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @skills.each do |skill| %>
+      <% @user_skills.each do |skill| %>
         <tr>
           <td><%= skill.name %></td>
           <td><%= skill.study_time %>時間</td>

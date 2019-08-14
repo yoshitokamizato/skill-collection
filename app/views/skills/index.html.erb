@@ -12,7 +12,7 @@
       <tbody>
         <% @skills.each do |skill| %>
           <tr>
-            <td># <%= skill.user.id %></td>
+            <td><%= skill.email %></td>
             <td><%= skill.name %></td>
             <td><%= skill.study_time %>時間</td>
           </tr>
