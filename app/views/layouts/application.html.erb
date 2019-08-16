@@ -13,7 +13,7 @@
 <body>
   <%= render 'layouts/header' %>
   <div id="container">
-    <section>
+    <section id="<%= "#{controller.controller_name}_#{controller.action_name}" %>">
       <%= yield %>
     </section>
   </div>
