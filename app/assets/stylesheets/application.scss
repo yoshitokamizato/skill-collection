@@ -18,3 +18,10 @@
 section .btn {
   text-align: center;
 }
+
+/*---新規登録、ログインページ---*/
+#sessions_new,
+#registrations_new {
+  width: 300px;
+  margin: 0 auto;
+}
