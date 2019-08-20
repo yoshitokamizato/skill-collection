@@ -8,7 +8,6 @@
       <thead class="bg-danger text-white">
         <tr>
           <th class="w-1"><%= sort_link(@q, :id, "No.") %></th>
-          <th class="w-2">ジャンル</th>
           <th class="w-5">内容</th>
         </tr>
       </thead>
@@ -16,7 +15,6 @@
         <% @texts.each do |text| %>
           <tr>
             <td><%= text.title %></td>
-            <td><%= link_to text.genre, "/texts/#{text.id}" %></td>
             <td><%= link_to text.contents, "/texts/#{text.id}" %></td>
           </tr>
         <% end %>
