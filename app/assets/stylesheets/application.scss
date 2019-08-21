@@ -11,6 +11,15 @@
   padding: 50px 0;
 }
 
+.f-white a {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+}
+
 .serch-bar {
   margin-bottom: 20px;
 }
