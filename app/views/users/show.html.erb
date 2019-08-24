@@ -1,4 +1,5 @@
 <h1>【マイページ】</h1>
+<p>ニックネーム：<%= @user.first.nickname %></p>
 <p>メールアドレス：<%= @user.first.email %></p>
 <hr>
 <%= form_for @skill, method: :post do |f| %>
