@@ -4,14 +4,16 @@
     <table class="table table-striped">
       <thead class="bg-danger text-white">
         <tr>
-          <th class="w-1">ユーザーID</th>
-          <th class="w-2">言語</th>
-          <th class="w-3">学習時間</th>
+          <th class="w-1">ニックネーム</th>
+          <th class="w-2">ユーザーID</th>
+          <th class="w-3">言語</th>
+          <th class="w-4">学習時間</th>
         </tr>
       </thead>
       <tbody>
         <% @skills.each do |skill| %>
           <tr>
+            <td><%= skill.nickname %></td>
             <td><%= skill.email %></td>
             <td><%= skill.name %></td>
             <td><%= skill.study_time %>時間</td>
