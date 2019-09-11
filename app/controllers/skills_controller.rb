@@ -8,7 +8,12 @@ class SkillsController < ApplicationController
   end
 
   def create
-    Skill.create(name: skill_params[:name], study_time: skill_params[:study_time], user_id: current_user.id)
+    Skill.create(
+      name: skill_params[:name],
+      study_time: skill_params[:study_time],
+      target_time: skill_params[:target_time],
+      user_id: current_user.id
+    )
     redirect_to user_path(current_user.id)
   end
 
@@ -19,6 +24,6 @@ class SkillsController < ApplicationController
   private
 
   def skill_params
-    params.require(:skill).permit(:name, :study_time)
+    params.require(:skill).permit(:name, :study_time, :target_time)
   end
 end
