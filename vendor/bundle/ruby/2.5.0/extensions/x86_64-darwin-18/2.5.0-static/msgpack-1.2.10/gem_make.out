@@ -1,5 +1,5 @@
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
-/Users/mura/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190701-3611-19ykv0b.rb extconf.rb
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
+/Users/adachikeisuke/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190916-8579-9ktnrz.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -11,10 +11,10 @@ checking for rb_hash_dup() in ruby.h... yes
 checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
 make "DESTDIR=" clean
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
 make "DESTDIR="
 compiling buffer.c
 compiling buffer_class.c
@@ -34,6 +34,6 @@ static VALUE Unpacker_peek_next_type(VALUE self)
 compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.bundle
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/msgpack-1.2.10/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20190701-3611-b48i43/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20190916-8579-13ewb23/msgpack
