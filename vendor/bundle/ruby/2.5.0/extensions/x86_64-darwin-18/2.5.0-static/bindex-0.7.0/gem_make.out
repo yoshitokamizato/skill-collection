@@ -1,15 +1,15 @@
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
-/Users/mura/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190701-3611-1cdjks7.rb extconf.rb
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/adachikeisuke/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190916-8579-1dgseqa.rb extconf.rb
 creating Makefile
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
 make "DESTDIR=" clean
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
 make "DESTDIR="
 compiling cruby.c
 linking shared-object skiptrace/cruby.bundle
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190701-3611-mo4ne1/skiptrace
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190916-8579-swj83u/skiptrace

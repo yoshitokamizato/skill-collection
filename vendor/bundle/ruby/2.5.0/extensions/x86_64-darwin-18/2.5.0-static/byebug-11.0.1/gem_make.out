@@ -1,11 +1,11 @@
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
-/Users/mura/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190701-3611-1jxr7yb.rb extconf.rb
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+/Users/adachikeisuke/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190916-8579-1l818z5.rb extconf.rb
 creating Makefile
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
 make "DESTDIR=" clean
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
 make "DESTDIR="
 compiling breakpoint.c
 compiling byebug.c
@@ -14,6 +14,6 @@ compiling locker.c
 compiling threads.c
 linking shared-object byebug/byebug.bundle
 
-current directory: /Users/mura/0626/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190701-3611-1vh15qn/byebug
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190916-8579-a8w0q7/byebug
