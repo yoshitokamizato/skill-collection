@@ -1,4 +1,19 @@
 <div class="mx-auto text-center" style="width: 800px;">
-  <h1>Text</h1>
-  <%= markdown(@text.contents).html_safe %>
+    <%
+      text =<<~TEXT
+
+        # Macのショートカットキー一覧
+
+        コピー
+        ```
+        command + c
+        ```
+
+        ペースト
+        ```
+        command + p
+        ```
+      TEXT
+    %>
+    <%= markdown(text).html_safe %>
 </div>
