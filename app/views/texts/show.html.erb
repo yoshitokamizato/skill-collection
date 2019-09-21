@@ -1,19 +1,16 @@
-<div class="mx-auto text-center" style="width: 800px;">
-    <%
-      text =<<~TEXT
+<div class="mx-auto text-left" style="width: 800px;">
 
-        # Macのショートカットキー一覧
+  <%
+    text =<<~TEXT
+      # Macのショートカットキー一覧
+    TEXT
+  %>
+  <%= markdown(text).html_safe %>
 
-        コピー
-        ```
-        command + c
-        ```
-
-        ペースト
-        ```
-        command + p
-        ```
-      TEXT
-    %>
-    <%= markdown(text).html_safe %>
+  <% @commands.each do |command| %>
+    <tr>
+      <td><%= command.title %></td>
+      <td><%= command.content %></td><br>
+    </tr>
+  <% end %>
 </div>
