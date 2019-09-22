@@ -6,7 +6,6 @@
   <h2>学習内容を入力</h2>
   <p>言語名：<%= f.collection_select :name, SkillList.all, :name, :name %></p>
   <p>学習時間：<%= f.number_field :study_time %></p>
-  <p>目標時間：<%= f.number_field :target_time %></p>
   <input type="submit" value="送信">
 <% end %>
 
@@ -18,7 +17,6 @@
       <tr>
         <th class="w-1">言語</th>
         <th class="w-2">学習時間</th>
-        <th class="w-2">目標時間</th>
       </tr>
     </thead>
     <tbody>
@@ -26,7 +24,36 @@
         <tr>
           <td><%= skill.name %></td>
           <td><%= skill.study_time %>時間</td>
-          <td><%= skill.target_time %>時間</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<%= form_for @goal, method: :post do |f| %>
+  <h2>目標学習時間を入力</h2>
+  <p>言語名：<%= f.collection_select :name, SkillList.all, :name, :name %></p>
+  <p>学習時間：<%= f.number_field :target_time %></p>
+  <input type="submit" value="送信">
+<% end %>
+
+<hr>
+
+<div class="table-container">
+  <table class="table table-striped">
+    <thead class="bg-danger text-white">
+      <tr>
+        <th class="w-1">言語</th>
+        <th class="w-2">目標学習時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @user_goals.each do |goal| %>
+        <tr>
+          <td><%= goal.name %></td>
+          <td><%= goal.target_time %>時間</td>
         </tr>
       <% end %>
     </tbody>
