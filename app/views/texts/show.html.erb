@@ -6,11 +6,12 @@
     TEXT
   %>
   <%= markdown(text).html_safe %>
-
   <% @commands.each do |command| %>
     <tr>
-      <td><%= command.title %></td>
-      <td><%= command.content %></td><br>
+      <th><%= markdown(command.title).html_safe %><th>
+      <th><%= markdown(command.content).html_safe %><th><br>
     </tr>
   <% end %>
+
+
 </div>
