@@ -8,10 +8,9 @@
   <%= markdown(text).html_safe %>
   <% @commands.each do |command| %>
     <tr>
-      <th><%= markdown(command.title).html_safe %><th>
-      <th><%= markdown(command.content).html_safe %><th><br>
+      <th><%= command.title %><th><br>
+      <th>```<br><%= command.content %><br>```<th><br>
     </tr>
   <% end %>
-
 
 </div>
