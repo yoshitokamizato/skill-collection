@@ -1,3 +1,4 @@
+<p>学習内容を登録しました。</p>
 <div class="table-container">
   <table class="table table-striped">
     <thead class="bg-danger text-white">
@@ -16,3 +17,10 @@
     </tbody>
   </table>
 </div>
+
+<hr>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+data-text="
+<%= @twitter_now.name %>を<%= @twitter_now.study_time %>時間勉強しました！   total:<%= @twitter_sum.sum(:study_time) %>h(<%= @twitter_now.name %>)"
+data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
