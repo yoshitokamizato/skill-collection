@@ -1,11 +1,12 @@
 class ImportCsv < ApplicationRecord
     def self.import(path)
+        Text.delete_all
         list = []
 
         CSV.foreach(path, headers: true) do |row|
             list << {
                 title: row["title"],
-                contents: row["contents"], 
+                contents: row["contents"],
                 genre: row["genre"]
             }
         end
