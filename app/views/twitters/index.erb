@@ -1,0 +1,18 @@
+<div class="table-container">
+  <table class="table table-striped">
+    <thead class="bg-danger text-white">
+      <tr>
+        <th class="w-1">言語</th>
+        <th class="w-2">今回学習時間</th>
+        <th class="w-2">合計学習時間</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= @twitter_now.name %></td>
+          <td><%= @twitter_now.study_time %>時間</td>
+          <td><%= @twitter_sum.sum(:study_time) %>時間</td>
+        </tr>
+    </tbody>
+  </table>
+</div>

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :skills
 
   get 'texts/:id', to: 'texts#show'
+  get 'twitters/index', to: 'twitters#index'
 end

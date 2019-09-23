@@ -14,7 +14,7 @@ class SkillsController < ApplicationController
       target_time: skill_params[:target_time],
       user_id: current_user.id
     )
-    redirect_to user_path(current_user.id)
+    redirect_to twitters_index_path
   end
 
   def move_to_index

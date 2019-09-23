@@ -7,7 +7,7 @@
   <p>言語名：<%= f.collection_select :name, SkillList.all, :name, :name %></p>
   <p>学習時間：<%= f.number_field :study_time %></p>
   <p>目標時間：<%= f.number_field :target_time %></p>
-  <input type="submit" value="送信">
+  <%= f.submit %>
 <% end %>
 
 <hr>
