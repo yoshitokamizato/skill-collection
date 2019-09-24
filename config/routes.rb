@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :users, only: :show
 
   resources :skills
+  resources :goals
+
 
   get 'texts/:id', to: 'texts#show'
   get 'twitters/index', to: 'twitters#index'
