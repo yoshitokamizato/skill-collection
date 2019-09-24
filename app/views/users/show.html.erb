@@ -6,12 +6,7 @@
   <h2>学習内容を入力</h2>
   <p>言語名：<%= f.collection_select :name, SkillList.all, :name, :name %></p>
   <p>学習時間：<%= f.number_field :study_time %></p>
-<<<<<<< HEAD
-  <p>目標時間：<%= f.number_field :target_time %></p>
   <%= f.submit %>
-=======
-  <input type="submit" value="送信">
->>>>>>> master
 <% end %>
 
 <hr>
@@ -64,10 +59,3 @@
     </tbody>
   </table>
 </div>
-
-<hr>
-
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-data-text="言語:学習時間:目標時間<% @user_skills.each do |skill| %>
-<%= skill.name %>:<%= skill.study_time %>時間:<%= skill.target_time %>時間<% end %>"
-data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
