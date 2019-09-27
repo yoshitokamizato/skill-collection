@@ -42,11 +42,11 @@ module ApplicationHelper
     markdown.render(text)
   end
 
-  def disp_twitter_text(twitter_now, twitter_sum)
+  def disp_twitter_text(**params)
     text =<<~EOS
-    #{twitter_now.name}を#{twitter_now.study_time}時間勉強しました！
+    #{params[:now].name}を#{params[:now].study_time}時間勉強しました！
 
-    合計：#{twitter_sum.sum(:study_time)}時間
+    合計#{params[:sum].sum(:study_time)}時間
     EOS
   end
 end
