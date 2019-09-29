@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_09_26_132818) do
-=======
 ActiveRecord::Schema.define(version: 2019_09_28_140208) do
->>>>>>> test
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -69,11 +65,6 @@ ActiveRecord::Schema.define(version: 2019_09_28_140208) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-    t.integer "target_time", default: 0
-    t.integer "remaining"
-=======
->>>>>>> test
   end
 
   create_table "texts", force: :cascade do |t|
