@@ -11,7 +11,6 @@ class SkillsController < ApplicationController
     Skill.create(
       name: skill_params[:name],
       study_time: skill_params[:study_time],
-      target_time: skill_params[:target_time],
       user_id: current_user.id
     )
     redirect_to twitters_index_path
@@ -24,6 +23,6 @@ class SkillsController < ApplicationController
   private
 
   def skill_params
-    params.require(:skill).permit(:name, :study_time, :target_time)
+    params.require(:skill).permit(:name, :study_time)
   end
 end
