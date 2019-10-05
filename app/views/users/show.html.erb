@@ -38,30 +38,4 @@
 
 <hr>
 
-<%= form_for @goal, method: :post do |f| %>
-  <h2>目標学習時間を入力</h2>
-  <p>言語名：<%= f.collection_select :name, SkillList.all, :name, :name %></p>
-  <p>学習時間：<%= f.number_field :target_time %></p>
-  <input type="submit" value="送信">
-<% end %>
-
-<hr>
-
-<div class="table-container">
-  <table class="table table-striped">
-    <thead class="bg-danger text-white">
-      <tr>
-        <th class="w-1">言語</th>
-        <th class="w-2">目標学習時間</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @user_goals.each do |goal| %>
-        <tr>
-          <td><%= goal.name %></td>
-          <td><%= goal.target_time %>時間</td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+<%= link_to "目標学習時間を入力", "/goals/show", class: 'btn btn-primary' %>
