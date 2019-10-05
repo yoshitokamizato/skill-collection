@@ -17,14 +17,20 @@
       <tr>
         <th class="w-1">言語</th>
         <th class="w-2">学習時間</th>
+        <th calss="w-2">目標残り時間</th>
       </tr>
     </thead>
     <tbody>
       <% @user_skills.each do |skill| %>
-        <tr>
-          <td><%= skill.name %></td>
-          <td><%= skill.study_time %>時間</td>
-        </tr>
+          <tr>
+            <td><%= skill.name %></td>
+            <td><%= skill.study_time %>時間</td>
+            <% @user_goals.each do |goal| %>
+              <% if skill.name == goal.name %>
+                <td><%= goal.target_time - skill.study_time %></td>
+              <% end %>
+            <% end %>
+          </tr>
       <% end %>
     </tbody>
   </table>
