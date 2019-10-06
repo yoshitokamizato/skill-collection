@@ -13,4 +13,5 @@ Rails.application.routes.draw do
 
 
   get 'texts/:id', to: 'texts#show'
+  get 'twitters/index', to: 'twitters#index'
 end

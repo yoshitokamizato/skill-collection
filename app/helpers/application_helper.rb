@@ -41,4 +41,12 @@ module ApplicationHelper
     markdown = Redcarpet::Markdown.new(html_render, options)
     markdown.render(text)
   end
-end 
+
+  def disp_twitter_text(**params)
+    text =<<~EOS
+    #{params[:now].name}を#{params[:now].study_time}時間勉強しました！
+
+    合計#{params[:sum].sum(:study_time)}時間
+    EOS
+  end
+end
