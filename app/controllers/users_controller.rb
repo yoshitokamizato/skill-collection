@@ -2,14 +2,8 @@ class UsersController < ApplicationController
   def show
     @user = User.where(id: current_user)
     @skill = Skill.new
-    @user_skills =
-      @user.joins(:skills).group(:email, :name).select(
-        'email, name, sum(study_time) as study_time'
-      )
+    @user_skills = @user.user_skill
     @goal = Goal.new
-    @user_goals =
-      @user.joins(:goals).group(:email, :name).select(
-        'email, name, target_time'
-      )
+    @user_goals = @user.user_goal
   end
 end
