@@ -1,6 +1,8 @@
 class SkillsController < ApplicationController
   def index
-    @skills = Skill.skills
+    skill_b = Calc.new
+    @skills = skill_b.user_skill
+
   end
 
   def new
