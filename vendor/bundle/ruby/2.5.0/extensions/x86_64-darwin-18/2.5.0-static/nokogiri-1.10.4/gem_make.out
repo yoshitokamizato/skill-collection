@@ -131,4 +131,8 @@ rm -rf /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/ge
 
 current directory: /Users/adachikeisuke/Desktop/skill-collection/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.10.4/ext/nokogiri
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20191013-25543-sjr9y8/nokogiri
+=======
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20191013-13458-5vpi19/nokogiri
+>>>>>>> master
