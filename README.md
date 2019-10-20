@@ -15,4 +15,5 @@
 - rails 5.2.3
 
 ### データベース
-- SQLite3
+- 開発環境  SQLite3
+- 本番環境  PostgreSQL
